@@ -1,5 +1,5 @@
 import styled from "styled-components"
-
+import React, { useEffect,useState } from "react";
 
 const Nav = () => {
 
@@ -21,7 +21,7 @@ const Nav = () => {
   }, [])
 
   return (
-    <NavWrapper show={show}>  
+    <NavWrapper $show={show}>  
       <Logo>
         <img
         alt="logo"
@@ -41,7 +41,7 @@ display: inline-block;
 margin-bottom: 10px;
 
 img {
-  display:P block;
+  display: block;
   width: 100%;
 }
 `
