@@ -74,7 +74,9 @@ const Banner = () => {
       <>
       <Container>
         <HomeContainer>
-          <iframe src={`https://www.youtube.com/embed/${movie.videos.results[0].key}>?control=0&autoplay=1&mute=1`} ></iframe>
+          <Iframe src={`https://www.youtube.com/embed/${movie.videos.results[0].key}?control=0&autoplay=1&mute=1`} 
+          >
+          </Iframe>
         </HomeContainer>
       </Container>
       <button onClick={()=> setIsClicked(false)}>
