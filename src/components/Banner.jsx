@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axios from '../api/axios';
+import axios from "../api/axios";
 import requests from '../api/requests';
 import './Banner.css';
 import styled from "styled-components";
 
 const Banner = () => {
 
-  const [movie, setMovie] = useState([null]);
+  const [movie, setMovie] = useState(null);
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
@@ -43,7 +43,8 @@ const Banner = () => {
     return (
     <div
     className="banner"
-    style={{backgroundImage: `url("http://image.tmdb.org/t/p/original${movie.backdrop_path}")`,
+    style={{
+    backgroundImage: `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`,
     backgroundPosition: 'top center',
     backgroundSize: 'cover'
     }}>
@@ -68,8 +69,7 @@ const Banner = () => {
       <div className="banner--fadeBottom" />
     </div>
   )
-  }
-  else {
+  } else {
     return (
       <>
       <Container>
