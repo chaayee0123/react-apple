@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "../../api/axios";
 
 
